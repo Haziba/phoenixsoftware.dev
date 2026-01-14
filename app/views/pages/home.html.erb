@@ -7,9 +7,9 @@
                 <span>Phoenix Software</span>
             </div>
             <div class="flex items-center space-x-8">
-                <%= link_to "Home", root_path, class: "text-charcoal-300 hover:text-white transition-colors" %>
-                <%= link_to "Case Studies", "#", class: "text-charcoal-300 hover:text-white transition-colors" %>
-                <%= link_to "Services", "#", class: "text-charcoal-300 hover:text-white transition-colors" %>
+                <%= link_to "Home", root_path, class: "text-white transition-colors" %>
+                <%= link_to "Case Studies", case_studies_path, class: "text-charcoal-300 hover:text-white transition-colors" %>
+                <%= link_to "Services", "#core-services", class: "text-charcoal-300 hover:text-white transition-colors" %>
                 <%= link_to "Get in Touch", "#cta", class: "bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors" %>
             </div>
         </nav>
@@ -200,42 +200,42 @@
             <div>
                 <div class="text-accent-500 font-medium mb-2">FEATURED CASE STUDY</div>
                 <h2 class="text-3xl font-bold text-white mb-6">
-                    Modernizing a Legacy E-commerce Platform
+                    Itemo — Peer-to-Peer Rental Marketplace
                 </h2>
                 <p class="text-lg text-charcoal-200 mb-6 leading-relaxed">
-                    A 10-year-old e-commerce platform was struggling with performance issues, security vulnerabilities, and an inability to scale during peak traffic. The business was losing revenue due to slow page loads and system crashes.
+                    A peer-to-peer borrowing and rental platform handling payments between strangers, identity verification, and complex rental workflows. What began as an AI-assisted proof of concept was rewritten and hardened into a secure, scalable production system.
                 </p>
                 <div class="space-y-4 mb-8">
                     <div class="flex items-center">
-                        <i class="fa-solid fa-chart-line text-accent-500 mr-3"></i>
-                        <span class="text-charcoal-200">Improved page load times by 75%</span>
+                        <i class="fa-solid fa-credit-card text-accent-500 mr-3"></i>
+                        <span class="text-charcoal-200">Secure payment flows with Stripe</span>
                     </div>
                     <div class="flex items-center">
-                        <i class="fa-solid fa-shield-halved text-accent-500 mr-3"></i>
-                        <span class="text-charcoal-200">Eliminated security vulnerabilities</span>
+                        <i class="fa-solid fa-user-check text-accent-500 mr-3"></i>
+                        <span class="text-charcoal-200">KYC integration for fraud prevention</span>
                     </div>
                     <div class="flex items-center">
-                        <i class="fa-solid fa-rocket text-accent-500 mr-3"></i>
-                        <span class="text-charcoal-200">Enabled 10x traffic capacity</span>
+                        <i class="fa-solid fa-mobile-screen text-accent-500 mr-3"></i>
+                        <span class="text-charcoal-200">Web, iOS, and Android from single backend</span>
                     </div>
                 </div>
-                <%= link_to "#", class: "inline-flex items-center text-accent-500 hover:text-accent-400 font-medium" do %>
-                    Read the full case study <i class="fa-solid fa-arrow-right ml-2"></i>
+                <%= link_to case_studies_path, class: "inline-flex items-center text-accent-500 hover:text-accent-400 font-medium" do %>
+                    View all case studies <i class="fa-solid fa-arrow-right ml-2"></i>
                 <% end %>
             </div>
             <div class="bg-charcoal-800 border border-charcoal-700 p-8 rounded-lg">
                 <div class="space-y-6">
                     <div class="border-l-4 border-accent-600 pl-4">
                         <div class="text-sm text-charcoal-400 mb-1">THE CHALLENGE</div>
-                        <div class="text-charcoal-100">Legacy monolith causing frequent outages and limiting business growth</div>
+                        <div class="text-charcoal-100">Payments, identity verification, fraud prevention, and complex rental state management—all trust-sensitive</div>
                     </div>
                     <div class="border-l-4 border-charcoal-600 pl-4">
                         <div class="text-sm text-charcoal-400 mb-1">THE APPROACH</div>
-                        <div class="text-charcoal-100">Strangler fig pattern with feature flags and blue-green deployments—no big-bang cutover</div>
+                        <div class="text-charcoal-100">Production-first rebuild with auditable state transitions and careful webhook handling</div>
                     </div>
                     <div class="border-l-4 border-charcoal-600 pl-4">
                         <div class="text-sm text-charcoal-400 mb-1">THE OUTCOME</div>
-                        <div class="text-charcoal-100">Stable, scalable platform supporting 300% revenue growth</div>
+                        <div class="text-charcoal-100">A fully production-ready marketplace designed to evolve without rewrites</div>
                     </div>
                 </div>
             </div>
@@ -277,6 +277,21 @@
                 <h3 class="text-xl font-semibold text-white mb-3">True Partnership</h3>
                 <p class="text-charcoal-300">I work as an extension of your team. The goal is to leave you stronger—with better systems and the knowledge to maintain them.</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Experience -->
+<section id="technology" class="py-16 bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Technology Experience</h2>
+            <p class="text-charcoal-200 mb-4">
+                I primarily work with Ruby on Rails, Hotwire, React, React Native, C#, and Node.js, and have delivered systems across AWS, GCP, and Azure. I've worked with relational and non-relational databases including PostgreSQL, MySQL, SQL Server, MongoDB, and DynamoDB.
+            </p>
+            <p class="text-charcoal-400">
+                I favour server-rendered architectures such as Hotwire where appropriate, as they provide excellent performance, accessibility, and SEO without unnecessary complexity.
+            </p>
         </div>
     </div>
 </section>

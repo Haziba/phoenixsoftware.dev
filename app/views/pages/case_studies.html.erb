@@ -1,0 +1,237 @@
+<!-- Header -->
+<header id="header" class="bg-charcoal-900 border-b border-charcoal-800">
+    <div class="max-w-7xl mx-auto px-8 py-6">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center space-x-2 text-xl font-semibold text-white">
+                <img src="/favicon.svg" alt="Phoenix Software" class="w-6 h-6">
+                <span>Phoenix Software</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <%= link_to "Home", root_path, class: "text-charcoal-300 hover:text-white transition-colors" %>
+                <%= link_to "Case Studies", case_studies_path, class: "text-white transition-colors" %>
+                <%= link_to "Services", root_path(anchor: "core-services"), class: "text-charcoal-300 hover:text-white transition-colors" %>
+                <%= link_to "Get in Touch", root_path(anchor: "cta"), class: "bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors" %>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="bg-charcoal-800 py-16">
+    <div class="max-w-7xl mx-auto px-8">
+        <h1 class="text-4xl font-bold text-white mb-4">Case Studies</h1>
+        <p class="text-xl text-charcoal-200 max-w-3xl">
+            Selected projects demonstrating end-to-end delivery, complex system design, and production-grade implementation.
+        </p>
+    </div>
+</section>
+
+<!-- Itemo -->
+<section id="itemo" class="py-16 bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-8">
+            <div class="text-accent-500 font-medium mb-2">PEER-TO-PEER MARKETPLACE</div>
+            <h2 class="text-3xl font-bold text-white mb-4">Itemo — Peer-to-Peer Rental Marketplace</h2>
+            <p class="text-lg text-charcoal-200 max-w-3xl">
+                A peer-to-peer borrowing and rental platform designed to allow users to safely lend and rent everyday items. Developed from initial concept through to a fully production-ready platform, including mobile apps, payments, identity verification, and complex rental workflows.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE CHALLENGE</div>
+                <p class="text-charcoal-100">Peer-to-peer marketplaces carry inherent risk: payments between strangers, identity verification, fraud prevention, and complex lifecycle state management. Early prototypes validated the idea, but production required a complete rethink around security and reliability.</p>
+            </div>
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE APPROACH</div>
+                <p class="text-charcoal-100">Rebuilt with a production-first mindset. Designed auditable rental state transitions, integrated Stripe with careful webhook handling, implemented KYC checks, and built AI-powered search. Delivered a single coherent platform across web, iOS, Android, and admin tooling.</p>
+            </div>
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE OUTCOME</div>
+                <p class="text-charcoal-100">A fully production-ready marketplace platform with secure payment flows, identity verification, clear operational tooling via an admin dashboard, and a system designed to evolve without rewrites.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-sm text-charcoal-400 mb-3">KEY CAPABILITIES</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">End-to-end product delivery</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Payments & KYC</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Trust-sensitive system design</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Complex business workflows</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Web + mobile delivery</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wulse -->
+<section id="wulse" class="py-16 bg-charcoal-800">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-8">
+            <div class="text-accent-500 font-medium mb-2">ACADEMIC PLATFORM</div>
+            <h2 class="text-3xl font-bold text-white mb-4">Wulse — Multi-Tenant Academic Research Platform</h2>
+            <p class="text-lg text-charcoal-200 max-w-3xl">
+                An open-source, multi-tenant academic research library designed to allow institutions to manage, distribute, and explore academic documents via a public interface. Developed from conception through to a production-ready system.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE CHALLENGE</div>
+                <p class="text-charcoal-100">Academic platforms require clear tenant separation, robust access controls, scalable document delivery, and clean public-facing UX that remains fast and discoverable. The system needed to balance institutional control with public accessibility.</p>
+            </div>
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE APPROACH</div>
+                <p class="text-charcoal-100">Designed a multi-tenant architecture with clear isolation boundaries. Built administrative tooling for managing institutions, documents, and metadata. Delivered a public-facing interface optimised for exploration using server-rendered architecture.</p>
+            </div>
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE OUTCOME</div>
+                <p class="text-charcoal-100">A flexible academic distribution platform with clear separation of concerns between tenants and users. A maintainable, extensible system suitable for open-source collaboration.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-sm text-charcoal-400 mb-3">KEY CAPABILITIES</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Multi-tenant architecture</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Admin tooling</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Public UX delivery</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Server-side rendering</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Long-term maintainability</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hydro International -->
+<section id="hydro" class="py-16 bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-8">
+            <div class="text-accent-500 font-medium mb-2">LEGACY MODERNISATION</div>
+            <h2 class="text-3xl font-bold text-white mb-4">Hydro International — Legacy System Modernisation</h2>
+            <p class="text-lg text-charcoal-200 max-w-3xl">
+                Hydro International relied on an internal project management and time-tracking system originally built in 2003 using a mix of C# ASP and Ruby. Brought in to modernise the system without disrupting active users or business operations.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE CHALLENGE</div>
+                <p class="text-charcoal-100">Business-critical internal tooling with an extremely old codebase. No tolerance for downtime. Existing users depended on current workflows. A full rewrite would have been risky and disruptive.</p>
+            </div>
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE APPROACH</div>
+                <p class="text-charcoal-100">Incremental, piecemeal migration rather than a big-bang rewrite. Rebuilt functionality gradually in modern Ruby on Rails with Hotwire. Ran old and new systems in parallel during transitions. Improved UX while preserving familiar workflows.</p>
+            </div>
+            <div class="bg-charcoal-800 border border-charcoal-700 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE OUTCOME</div>
+                <p class="text-charcoal-100">A modern Rails 7 application running on Windows infrastructure. Zero downtime for users during migration. Improved usability and maintainability. Reduced long-term operational risk.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-sm text-charcoal-400 mb-3">KEY CAPABILITIES</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Legacy modernisation</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Zero-downtime migration</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Stakeholder collaboration</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Progressive enhancement</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ydentity -->
+<section id="ydentity" class="py-16 bg-charcoal-800">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-8">
+            <div class="text-accent-500 font-medium mb-2">PAYMENTS & INTEGRATIONS</div>
+            <h2 class="text-3xl font-bold text-white mb-4">Ydentity — Payments & Secure Integrations</h2>
+            <p class="text-lg text-charcoal-200 max-w-3xl">
+                Ydentity was preparing to launch its platform and needed improvements across payments, integrations, and overall stability. Joined to extend an existing React application and backend services.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE CHALLENGE</div>
+                <p class="text-charcoal-100">Inheriting an unfamiliar codebase. Implementing secure payment flows. Integrating with a SAML-based Experian platform. Maintaining a clean user experience under security constraints.</p>
+            </div>
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE APPROACH</div>
+                <p class="text-charcoal-100">Implemented Stripe subscription and one-off payment systems. Integrated SAML authentication with external partners. Focused on security-first design without harming UX. Stabilised existing functionality in preparation for launch.</p>
+            </div>
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 rounded-lg">
+                <div class="text-sm text-charcoal-400 mb-2">THE OUTCOME</div>
+                <p class="text-charcoal-100">Reliable subscription and billing flows. Secure third-party authentication. A platform ready for real customers.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-sm text-charcoal-400 mb-3">KEY CAPABILITIES</div>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Payments & billing</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Secure authentication</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">Inherited codebases</span>
+                <span class="bg-charcoal-700 text-charcoal-200 px-3 py-1 rounded text-sm">UX & security balance</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Experience -->
+<section id="technology" class="py-16 bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="max-w-3xl">
+            <h2 class="text-2xl font-bold text-white mb-4">Technology Experience</h2>
+            <p class="text-charcoal-200 mb-4">
+                I primarily work with Ruby on Rails, Hotwire, React, React Native, C#, and Node.js, and have delivered systems across AWS, GCP, and Azure. I've worked with relational and non-relational databases including PostgreSQL, MySQL, SQL Server, MongoDB, and DynamoDB.
+            </p>
+            <p class="text-charcoal-400">
+                I favour server-rendered architectures such as Hotwire where appropriate, as they provide excellent performance, accessibility, and SEO without unnecessary complexity.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta" class="py-20 bg-charcoal-950">
+    <div class="max-w-4xl mx-auto px-8 text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">
+            Ready to discuss your project?
+        </h2>
+        <p class="text-xl text-charcoal-300 mb-4">
+            Let's discuss your technical challenges. No pitch, no pressure—just an honest conversation about what you're facing and whether I can help.
+        </p>
+        <p class="text-charcoal-400 mb-8">
+            Even if we don't end up working together, you'll leave with a clearer picture of your options.
+        </p>
+        <div class="flex items-center justify-center space-x-4">
+            <%= link_to "Schedule a Call", "#", class: "bg-accent-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-accent-700 transition-colors" %>
+            <%= link_to "Send a Message", "#", class: "border border-charcoal-600 text-white px-8 py-3 rounded-md text-lg font-medium hover:bg-charcoal-900 transition-colors" %>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-charcoal-900 py-12">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2 text-xl font-semibold text-white">
+                <img src="/favicon.svg" alt="Phoenix Software" class="w-6 h-6">
+                <span>Phoenix Software</span>
+            </div>
+            <div class="flex items-center space-x-8">
+                <%= link_to "Privacy", "#", class: "text-charcoal-400 hover:text-white transition-colors" %>
+                <%= link_to "Terms", "#", class: "text-charcoal-400 hover:text-white transition-colors" %>
+                <%= link_to "#", class: "text-charcoal-400 hover:text-white transition-colors" do %>
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                <% end %>
+            </div>
+        </div>
+        <div class="border-t border-charcoal-700 mt-8 pt-8 text-center">
+            <p class="text-charcoal-400">&copy; <%= Date.current.year %> Phoenix Software. Building reliable software solutions.</p>
+        </div>
+    </div>
+</footer>
