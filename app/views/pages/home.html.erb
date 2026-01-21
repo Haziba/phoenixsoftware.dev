@@ -3,13 +3,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div>
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 sm:mb-6">
-                Modernize your software without the risk
+                <span class="whitespace-nowrap">Untangle legacy systems.</span><br />Reduce risk.<br />Regain confidence.
             </h1>
-            <p class="text-lg sm:text-xl text-charcoal-200 mb-4 sm:mb-6 leading-relaxed">
-                15+ years delivering production-grade solutions for startups and established businesses. From legacy system modernization to scalable architecture design, I help reduce technical risk while driving real business outcomes.
-            </p>
             <p class="text-charcoal-400 mb-6 sm:mb-8 text-sm">
-                Independent consultant. Previously senior engineer at startups and established enterprises. I've led platform migrations with minimal disruption, handled large-scale ETL data migrations, and turned AI prototypes into production-ready systems.
+                15+ years delivering production systems across mixed technology stacks, including Ruby on Rails, C#, and Node.js.
             </p>
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <%= link_to "View Case Studies", "#featured-case-study", class: "bg-accent-600 text-white px-6 sm:px-8 py-3 rounded-md text-base sm:text-lg font-medium hover:bg-accent-700 transition-colors" %>
@@ -20,31 +17,25 @@
         </div>
         <div class="hidden lg:flex justify-center">
             <div class="w-80 h-80 bg-charcoal-700 border border-charcoal-600 rounded-2xl flex items-center justify-center">
-                <div class="text-center">
-                    <i class="fa-solid fa-code text-6xl text-charcoal-400 mb-4"></i>
-                    <div class="text-charcoal-300 font-medium">Production-Ready Solutions</div>
-                </div>
+                <%= image_tag "hero-image.png", class: "w-full h-full object-cover rounded-2xl" %>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Trust Signals -->
-<section id="trust-signals" class="py-12 sm:py-16 bg-charcoal-900">
+<!-- Positioning -->
+<section id="positioning" class="py-12 sm:py-16 bg-charcoal-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-            <div class="text-center">
-                <div class="text-3xl sm:text-4xl font-bold text-white mb-2">15+</div>
-                <div class="text-charcoal-300">Years in Production Systems</div>
-            </div>
-            <div class="text-center">
-                <div class="text-3xl sm:text-4xl font-bold text-white mb-2">Smooth</div>
-                <div class="text-charcoal-300">Migrations, Minimal Disruption</div>
-            </div>
-            <div class="text-center">
-                <div class="text-3xl sm:text-4xl font-bold text-white mb-2">Long-term</div>
-                <div class="text-charcoal-300">Systems Still Running Today</div>
-            </div>
+        <div class="max-w-3xl">
+            <p class="text-white font-medium mb-6 text-base sm:text-lg leading-relaxed">
+                When software become fragile, progress slows and risk builds up.
+            </p>
+            <p class="text-charcoal-200 mb-6 text-base sm:text-lg leading-relaxed">
+                I work with teams to stabilise unreliable legacy systems, reduce technical debt, and bring systems up to modern security and performance standards.
+            </p>
+            <p class="text-charcoal-200 text-base sm:text-lg leading-relaxed">
+                You get predictable behaviour in production, smoother more frequent releases, and a platform that's easier to maintain and evolve over time.
+            </p>
         </div>
     </div>
 </section>
@@ -54,124 +45,104 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
         <div class="text-center mb-10 sm:mb-16">
             <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Core Services</h2>
-            <p class="text-lg sm:text-xl text-charcoal-200 max-w-3xl mx-auto">
-                Fixed-scope professional offerings designed to solve specific technical challenges with predictable outcomes
-            </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-            <div id="service-modernization" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg">
-                <div class="flex items-start space-x-4 mb-4 sm:mb-6">
-                    <div class="bg-accent-900 p-3 rounded-lg shrink-0">
-                        <i class="fa-solid fa-arrows-rotate text-xl sm:text-2xl text-accent-400"></i>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Legacy System Triage -->
+            <div id="service-triage" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
+                <div class="mb-4 sm:mb-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-lg sm:text-xl font-semibold text-white">Legacy System Triage</h3>
+                        <span class="bg-accent-600 text-white text-xs font-medium px-2 py-1 rounded">Free</span>
                     </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Legacy System Modernization</h3>
-                        <p class="text-charcoal-300 text-sm sm:text-base">Transform outdated systems into maintainable, scalable solutions without business disruption</p>
-                    </div>
+                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">A short call to sanity-check your situation.</p>
+                    <p class="text-charcoal-400 text-sm">We'll walk through your system, the pain points, and what's making change slow or risky. You'll get an honest view on what's going wrong and whether it's worth fixing.</p>
                 </div>
-                <p class="text-sm text-charcoal-400 mb-4">Ideal for: Teams maintaining aging systems that have become difficult to change or scale safely.</p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Risk assessment & migration strategy
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Zero-downtime deployment plan
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Modern architecture implementation
-                    </li>
-                </ul>
-                <div class="text-base sm:text-lg font-semibold text-white">Starting at £25,000</div>
+
+                <div class="mb-6">
+                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            Your system feels fragile or hard to change
+                        </li>
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            You're unsure how serious the risk really is
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto pt-4 border-t border-charcoal-600">
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> Clarity on next steps</div>
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Time:</span> 60–90 minutes</div>
+                    <div class="text-sm text-charcoal-200 mb-4"><span class="text-charcoal-400">Cost:</span> Free</div>
+                    <%= link_to "Schedule a Call", "#", class: "block text-center bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors text-sm font-medium" %>
+                </div>
             </div>
 
-            <div id="service-architecture" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg">
-                <div class="flex items-start space-x-4 mb-4 sm:mb-6">
-                    <div class="bg-accent-900 p-3 rounded-lg shrink-0">
-                        <i class="fa-solid fa-sitemap text-xl sm:text-2xl text-accent-400"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Scalable Architecture Design</h3>
-                        <p class="text-charcoal-300 text-sm sm:text-base">Build systems that grow with your business while maintaining performance and reliability</p>
-                    </div>
+            <!-- Legacy Assessment & Migration Plan -->
+            <div id="service-assessment" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
+                <div class="mb-4 sm:mb-6">
+                    <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Legacy Assessment & Migration Plan</h3>
+                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">Clarity without the commitment.</p>
+                    <p class="text-charcoal-400 text-sm">I take ownership of understanding your system properly and produce a clear, pragmatic plan to move it toward a modern, secure, maintainable platform without the need for risky rewrites.</p>
                 </div>
-                <p class="text-sm text-charcoal-400 mb-4">Ideal for: Growing companies preparing for significant traffic increases or product expansion.</p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Comprehensive system design
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Performance optimization strategy
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Documentation & team training
-                    </li>
-                </ul>
-                <div class="text-base sm:text-lg font-semibold text-white">Starting at £15,000</div>
+
+                <div class="mb-6">
+                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            You want to a roadmap to a proper solution
+                        </li>
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            You need confidence before starting build work
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mt-auto pt-4 border-t border-charcoal-600">
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> A plan to a resolution</div>
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Typical engagements from:</span> £15,000</div>
+                    <div class="text-sm text-charcoal-200"><span class="text-charcoal-400">Duration:</span> 2–4 weeks</div>
+                </div>
             </div>
 
-            <div id="service-audit" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg">
-                <div class="flex items-start space-x-4 mb-4 sm:mb-6">
-                    <div class="bg-accent-900 p-3 rounded-lg shrink-0">
-                        <i class="fa-solid fa-magnifying-glass text-xl sm:text-2xl text-accent-400"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Technical Debt Assessment</h3>
-                        <p class="text-charcoal-300 text-sm sm:text-base">Identify risks and create actionable roadmaps to improve code quality and system stability</p>
-                    </div>
+            <!-- Migration & Modernisation Delivery -->
+            <div id="service-delivery" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
+                <div class="mb-4 sm:mb-6">
+                    <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Migration & Modernisation Delivery</h3>
+                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">I take the problem off your plate.</p>
+                    <p class="text-charcoal-400 text-sm">I stabilise and modernise the system incrementally. Reducing technical debt, improving reliability, and bringing security and performance up to current standards with minimal disruption to the business.</p>
                 </div>
-                <p class="text-sm text-charcoal-400 mb-4">Ideal for: Leaders who sense something is wrong but need an objective diagnosis before acting.</p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Comprehensive code review
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Risk prioritization matrix
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Implementation roadmap
-                    </li>
-                </ul>
-                <div class="text-base sm:text-lg font-semibold text-white">Starting at £8,000</div>
-            </div>
 
-            <div id="service-consulting" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg">
-                <div class="flex items-start space-x-4 mb-4 sm:mb-6">
-                    <div class="bg-accent-900 p-3 rounded-lg shrink-0">
-                        <i class="fa-solid fa-handshake text-xl sm:text-2xl text-accent-400"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg sm:text-xl font-semibold text-white mb-2">Strategic Technology Consulting</h3>
-                        <p class="text-charcoal-300 text-sm sm:text-base">Navigate complex technical decisions with confidence through experienced guidance</p>
-                    </div>
+                <div class="mb-6">
+                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            The system needs to be reliable and secure
+                        </li>
+                        <li class="flex items-start text-charcoal-200 text-sm">
+                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
+                            You don't want to tie up internal developers
+                        </li>
+                    </ul>
                 </div>
-                <p class="text-sm text-charcoal-400 mb-4">Ideal for: Founders and executives making high-stakes technology decisions without in-house expertise.</p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Technology stack evaluation
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Team structure optimization
-                    </li>
-                    <li class="flex items-center text-charcoal-200 text-sm sm:text-base">
-                        <i class="fa-solid fa-check text-accent-500 mr-3 shrink-0"></i>
-                        Long-term strategy planning
-                    </li>
-                </ul>
-                <div class="text-base sm:text-lg font-semibold text-white">Monthly retainer available</div>
+
+                <div class="mt-auto pt-4 border-t border-charcoal-600">
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> Software you can trust again</div>
+                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Typical engagements from:</span> £60,000</div>
+                    <div class="text-sm text-charcoal-200"><span class="text-charcoal-400">Duration:</span> 2–6+ months</div>
+                </div>
             </div>
         </div>
+
+        <p class="text-center text-charcoal-400 mt-10 sm:mt-12 text-sm sm:text-base">
+            Not every system needs rebuilding. Most need careful stabilisation, clear thinking, and experienced execution.
+        </p>
     </div>
 </section>
 
@@ -225,40 +196,39 @@
     </div>
 </section>
 
-<!-- Why Choose Section -->
-<section id="why-choose" class="py-12 sm:py-20 bg-charcoal-800">
+<!-- How I Work Section -->
+<section id="how-i-work" class="py-12 sm:py-20 bg-charcoal-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Why Work With Me</h2>
-            <p class="text-lg sm:text-xl text-charcoal-200 max-w-3xl mx-auto">
-                Senior-level expertise focused on reducing risk and delivering measurable business outcomes
+        <div class="max-w-3xl">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">How I Work</h2>
+            <p class="text-charcoal-200 mb-6 text-base sm:text-lg">
+                My approach is deliberately incremental and risk-aware:
             </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-8">
-            <div id="reason-experience" class="text-center">
-                <div class="bg-charcoal-700 border border-charcoal-600 w-14 h-14 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                    <i class="fa-solid fa-medal text-xl sm:text-2xl text-accent-500"></i>
-                </div>
-                <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Proven Experience</h3>
-                <p class="text-charcoal-300 text-sm sm:text-base">15+ years building systems that handle real traffic and real business pressure. I've built robust platforms designed to meet 99.9% uptime requirements.</p>
-            </div>
-
-            <div id="reason-delivery" class="text-center">
-                <div class="bg-charcoal-700 border border-charcoal-600 w-14 h-14 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                    <i class="fa-solid fa-bullseye text-xl sm:text-2xl text-accent-500"></i>
-                </div>
-                <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Reliable Delivery</h3>
-                <p class="text-charcoal-300 text-sm sm:text-base">Fixed-scope engagements with clear deliverables. I've shipped under deadline pressure and maintained systems for years after launch.</p>
-            </div>
-
-            <div id="reason-partnership" class="text-center">
-                <div class="bg-charcoal-700 border border-charcoal-600 w-14 h-14 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                    <i class="fa-solid fa-users text-xl sm:text-2xl text-accent-500"></i>
-                </div>
-                <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">True Partnership</h3>
-                <p class="text-charcoal-300 text-sm sm:text-base">I work as an extension of your team. The goal is to leave you stronger—with better systems and the knowledge to maintain them.</p>
-            </div>
+            <ul class="space-y-3 mb-6">
+                <li class="flex items-start text-charcoal-200 text-sm sm:text-base">
+                    <i class="fa-solid fa-check text-accent-500 mr-3 mt-1 shrink-0"></i>
+                    Stabilise existing systems and address reliability issues
+                </li>
+                <li class="flex items-start text-charcoal-200 text-sm sm:text-base">
+                    <i class="fa-solid fa-check text-accent-500 mr-3 mt-1 shrink-0"></i>
+                    Understand the system and identify security and performance issues
+                </li>
+                <li class="flex items-start text-charcoal-200 text-sm sm:text-base">
+                    <i class="fa-solid fa-check text-accent-500 mr-3 mt-1 shrink-0"></i>
+                    Build out a robust test suite to ensure the system is reliable
+                </li>
+                <li class="flex items-start text-charcoal-200 text-sm sm:text-base">
+                    <i class="fa-solid fa-check text-accent-500 mr-3 mt-1 shrink-0"></i>
+                    Modernise gradually without disrupting users
+                </li>
+                <li class="flex items-start text-charcoal-200 text-sm sm:text-base">
+                    <i class="fa-solid fa-check text-accent-500 mr-3 mt-1 shrink-0"></i>
+                    Hand over a secure, performant, and maintainable system
+                </li>
+            </ul>
+            <p class="text-charcoal-400 text-sm sm:text-base">
+                This method prioritises continuity, clarity, and long-term sustainability over short-term rewrites.
+            </p>
         </div>
     </div>
 </section>
@@ -271,9 +241,6 @@
             <p class="text-charcoal-200 mb-4 text-sm sm:text-base">
                 I primarily work with Ruby on Rails, Hotwire, React, React Native, C#, and Node.js, and have delivered systems across AWS, GCP, and Azure. I've worked with relational and non-relational databases including PostgreSQL, MySQL, SQL Server, MongoDB, and DynamoDB.
             </p>
-            <p class="text-charcoal-400 text-sm sm:text-base">
-                I favour server-rendered architectures such as Hotwire where appropriate, as they provide excellent performance, accessibility, and SEO without unnecessary complexity.
-            </p>
         </div>
     </div>
 </section>
@@ -282,10 +249,10 @@
 <section id="cta" class="py-12 sm:py-20 bg-charcoal-950">
     <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
         <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
-            Ready to reduce technical risk and accelerate growth?
+            Ready to reduce technical risk and get back on top of your competition?
         </h2>
         <p class="text-lg sm:text-xl text-charcoal-300 mb-4">
-            Let's discuss your technical challenges. No pitch, no pressure—just an honest conversation about what you're facing and whether I can help.
+            Let's discuss your technical challenges.
         </p>
         <p class="text-charcoal-400 mb-6 sm:mb-8 text-sm sm:text-base">
             Even if we don't end up working together, you'll leave with a clearer picture of your options.
