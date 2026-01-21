@@ -10,7 +10,7 @@
             </p>
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <%= link_to "View Case Studies", "#featured-case-study", class: "bg-accent-600 text-white px-6 sm:px-8 py-3 rounded-md text-base sm:text-lg font-medium hover:bg-accent-700 transition-colors" %>
-                <%= link_to "#core-services", class: "text-charcoal-200 hover:text-white font-medium text-base sm:text-lg transition-colors" do %>
+                <%= link_to services_path, class: "text-charcoal-200 hover:text-white font-medium text-base sm:text-lg transition-colors" do %>
                     Explore Services <i class="fa-solid fa-arrow-right ml-2"></i>
                 <% end %>
             </div>
@@ -40,114 +40,8 @@
     </div>
 </section>
 
-<!-- Core Services -->
-<section id="core-services" class="py-12 sm:py-20 bg-charcoal-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Core Services</h2>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-            <!-- Legacy System Triage -->
-            <div id="service-triage" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
-                <div class="mb-4 sm:mb-6">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="text-lg sm:text-xl font-semibold text-white">Legacy System Triage</h3>
-                        <span class="bg-accent-600 text-white text-xs font-medium px-2 py-1 rounded">Free</span>
-                    </div>
-                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">A short call to sanity-check your situation.</p>
-                    <p class="text-charcoal-400 text-sm">We'll walk through your system, the pain points, and what's making change slow or risky. You'll get an honest view on what's going wrong and whether it's worth fixing.</p>
-                </div>
-
-                <div class="mb-6">
-                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
-                    <ul class="space-y-2">
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            Your system feels fragile or hard to change
-                        </li>
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            You're unsure how serious the risk really is
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-auto pt-4 border-t border-charcoal-600">
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> Clarity on next steps</div>
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Time:</span> 60–90 minutes</div>
-                    <div class="text-sm text-charcoal-200 mb-4"><span class="text-charcoal-400">Cost:</span> Free</div>
-                    <%= link_to "Schedule a Call", contact_path(anchor: "schedule"), class: "block text-center bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors text-sm font-medium" %>
-                </div>
-            </div>
-
-            <!-- Legacy Assessment & Migration Plan -->
-            <div id="service-assessment" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
-                <div class="mb-4 sm:mb-6">
-                    <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Legacy Assessment & Migration Plan</h3>
-                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">Clarity without the commitment.</p>
-                    <p class="text-charcoal-400 text-sm">I take ownership of understanding your system properly and produce a clear, pragmatic plan to move it toward a modern, secure, maintainable platform without the need for risky rewrites.</p>
-                </div>
-
-                <div class="mb-6">
-                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
-                    <ul class="space-y-2">
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            You want to a roadmap to a proper solution
-                        </li>
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            You need confidence before starting build work
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-auto pt-4 border-t border-charcoal-600">
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> A plan to a resolution</div>
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Typical engagements from:</span> £15,000</div>
-                    <div class="text-sm text-charcoal-200"><span class="text-charcoal-400">Duration:</span> 2–4 weeks</div>
-                </div>
-            </div>
-
-            <!-- Migration & Modernisation Delivery -->
-            <div id="service-delivery" class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg flex flex-col">
-                <div class="mb-4 sm:mb-6">
-                    <h3 class="text-lg sm:text-xl font-semibold text-white mb-3">Migration & Modernisation Delivery</h3>
-                    <p class="text-charcoal-300 text-sm sm:text-base mb-4">I take the problem off your plate.</p>
-                    <p class="text-charcoal-400 text-sm">I stabilise and modernise the system incrementally. Reducing technical debt, improving reliability, and bringing security and performance up to current standards with minimal disruption to the business.</p>
-                </div>
-
-                <div class="mb-6">
-                    <div class="text-sm text-charcoal-400 mb-2">Good fit if:</div>
-                    <ul class="space-y-2">
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            The system needs to be reliable and secure
-                        </li>
-                        <li class="flex items-start text-charcoal-200 text-sm">
-                            <i class="fa-solid fa-check text-accent-500 mr-2 mt-0.5 shrink-0"></i>
-                            You don't want to tie up internal developers
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="mt-auto pt-4 border-t border-charcoal-600">
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Outcome:</span> Software you can trust again</div>
-                    <div class="text-sm text-charcoal-200 mb-1"><span class="text-charcoal-400">Typical engagements from:</span> £60,000</div>
-                    <div class="text-sm text-charcoal-200"><span class="text-charcoal-400">Duration:</span> 2–6+ months</div>
-                </div>
-            </div>
-        </div>
-
-        <p class="text-center text-charcoal-400 mt-10 sm:mt-12 text-sm sm:text-base">
-            Not every system needs rebuilding. Most need careful stabilisation, clear thinking, and experienced execution.
-        </p>
-    </div>
-</section>
-
 <!-- Featured Case Study -->
-<section id="featured-case-study" class="py-12 sm:py-20 bg-charcoal-900">
+<section id="featured-case-study" class="py-12 sm:py-20 bg-charcoal-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div>
@@ -176,7 +70,7 @@
                     View all case studies <i class="fa-solid fa-arrow-right ml-2"></i>
                 <% end %>
             </div>
-            <div class="bg-charcoal-800 border border-charcoal-700 p-6 sm:p-8 rounded-lg">
+            <div class="bg-charcoal-700 border border-charcoal-600 p-6 sm:p-8 rounded-lg">
                 <div class="space-y-4 sm:space-y-6">
                     <div class="border-l-4 border-accent-600 pl-4">
                         <div class="text-sm text-charcoal-400 mb-1">THE CHALLENGE</div>
@@ -197,7 +91,7 @@
 </section>
 
 <!-- How I Work Section -->
-<section id="how-i-work" class="py-12 sm:py-20 bg-charcoal-800">
+<section id="how-i-work" class="py-12 sm:py-20 bg-charcoal-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
         <div class="max-w-3xl">
             <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">How I Work</h2>
@@ -234,7 +128,7 @@
 </section>
 
 <!-- Technology Experience -->
-<section id="technology" class="py-12 sm:py-16 bg-charcoal-900">
+<section id="technology" class="py-12 sm:py-16 bg-charcoal-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-xl sm:text-2xl font-bold text-white mb-4">Technology Experience</h2>
