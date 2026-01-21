@@ -6,9 +6,14 @@
                 <img src="/apple-touch-icon.png" alt="Phoenix Software" class="w-12 h-12">
                 <span>Phoenix Software</span>
             </div>
-            <%= link_to "https://www.linkedin.com/in/harry-boyes-01729128/", class: "text-charcoal-400 hover:text-white transition-colors", target: "_blank", rel: "noopener noreferrer" do %>
-                <i class="fa-brands fa-linkedin text-lg sm:text-xl"></i>
-            <% end %>
+            <div class="flex items-center space-x-4">
+                <%= link_to "https://www.linkedin.com/in/harry-boyes-01729128/", class: "text-charcoal-400 hover:text-white transition-colors", target: "_blank", rel: "noopener noreferrer" do %>
+                    <i class="fa-brands fa-linkedin text-lg sm:text-xl"></i>
+                <% end %>
+                <%= link_to "https://www.upwork.com/freelancers/~01d8a987282e2cbad1?viewMode=1&s=1110580755107926016", class: "text-charcoal-400 hover:text-white transition-colors", target: "_blank", rel: "noopener noreferrer" do %>
+                    <i class="fa-brands fa-upwork text-lg sm:text-xl"></i>
+                <% end %>
+            </div>
         </div>
         <div class="border-t border-charcoal-700 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
             <p class="text-charcoal-400 text-sm sm:text-base">&copy; <%= Date.current.year %> Phoenix Software. Building reliable software solutions.</p>
