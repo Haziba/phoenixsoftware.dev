@@ -169,22 +169,5 @@
     </div>
 </section>
 
-<!-- CTA Section -->
-<section id="cta" class="py-12 sm:py-20 bg-charcoal-950">
-    <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6">
-            Ready to discuss your project?
-        </h2>
-        <p class="text-lg sm:text-xl text-charcoal-300 mb-4">
-            Let's discuss your technical challenges. No pitch, no pressure -just an honest conversation about what you're facing and whether I can help.
-        </p>
-        <p class="text-charcoal-400 mb-6 sm:mb-8 text-sm sm:text-base">
-            Even if we don't end up working together, you'll leave with a clearer picture of your options.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <%= link_to "Schedule a Call", "#", class: "w-full sm:w-auto bg-accent-600 text-white px-8 py-3 rounded-md text-base sm:text-lg font-medium hover:bg-accent-700 transition-colors" %>
-            <%= link_to "Send a Message", "#", class: "w-full sm:w-auto border border-charcoal-600 text-white px-8 py-3 rounded-md text-base sm:text-lg font-medium hover:bg-charcoal-900 transition-colors" %>
-        </div>
-    </div>
-</section>
+<%= render "pages/cta" %>
 
