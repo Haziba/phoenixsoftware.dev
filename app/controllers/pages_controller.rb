@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def case_studies
   end
+
+  def contact
+  end
 end

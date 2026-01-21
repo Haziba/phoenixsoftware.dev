@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   root "pages#home"
 
   get "case-studies", to: "pages#case_studies", as: :case_studies
+  get "contact", to: "pages#contact", as: :contact
 end

@@ -11,17 +11,16 @@
                 <%= link_to "Home", root_path, class: "#{current_page?(root_path) ? 'text-white' : 'text-charcoal-300 hover:text-white'} transition-colors" %>
                 <%= link_to "Case Studies", case_studies_path, class: "#{current_page?(case_studies_path) ? 'text-white' : 'text-charcoal-300 hover:text-white'} transition-colors" %>
                 <%= link_to "Services", current_page?(root_path) ? "#core-services" : root_path(anchor: "core-services"), class: "text-charcoal-300 hover:text-white transition-colors" %>
-                <%= link_to "Get in Touch", current_page?(root_path) ? "#cta" : root_path(anchor: "cta"), class: "bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors" %>
+                <%= link_to "Get in Touch", contact_path, class: "bg-accent-600 text-white px-6 py-2 rounded-md hover:bg-accent-700 transition-colors" %>
             </div>
             <!-- Mobile nav -->
             <div class="flex md:hidden items-center space-x-4">
                 <% if current_page?(root_path) %>
                     <%= link_to "Work", case_studies_path, class: "text-charcoal-300 hover:text-white transition-colors text-sm" %>
-                    <%= link_to "Contact", "#cta", class: "bg-accent-600 text-white px-4 py-2 rounded-md hover:bg-accent-700 transition-colors text-sm" %>
                 <% else %>
                     <%= link_to "Home", root_path, class: "text-charcoal-300 hover:text-white transition-colors text-sm" %>
-                    <%= link_to "Contact", root_path(anchor: "cta"), class: "bg-accent-600 text-white px-4 py-2 rounded-md hover:bg-accent-700 transition-colors text-sm" %>
                 <% end %>
+                <%= link_to "Contact", contact_path, class: "bg-accent-600 text-white px-4 py-2 rounded-md hover:bg-accent-700 transition-colors text-sm" %>
             </div>
         </nav>
     </div>
