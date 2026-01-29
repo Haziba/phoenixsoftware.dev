@@ -76,9 +76,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="bg-charcoal-50 text-charcoal-900 font-sans">
+  <body class="bg-charcoal-50 text-charcoal-900 font-sans min-h-screen flex flex-col">
     <%= render "layouts/header" %>
-    <%= yield %>
+    <main class="flex-grow flex flex-col">
+      <%= yield %>
+    </main>
     <%= render "layouts/footer" %>
   </body>
 </html>
