@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get "case-studies", to: "pages#case_studies", as: :case_studies
   get "contact", to: "pages#contact", as: :contact
   get "services", to: "pages#services", as: :services
+
+  resources :posts, only: [:index, :show], param: :slug
 end
