@@ -1,4 +1,10 @@
-# Legacy software doesn’t stop work, it just creates risk
+---
+title: "Legacy software doesn't stop work, it just creates risk"
+date: 2026-01-29
+description: "When software gets in the way, people find workarounds. Those workarounds introduce risk."
+---
+
+# Legacy software doesn't stop work, it just creates risk
 
 When software gets in the way of day-to-day work, people don’t stop and wait for it to be fixed. They find another way to get the job done.
 

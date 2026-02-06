@@ -1,6 +1,6 @@
 ---
 title: "The Price of Fragile Systems"
-date: 2026-02-05
+date: 2026-02-06
 description: "Legacy software doesn't just make development harder. It limits how a business can respond to change."
 ---
 
